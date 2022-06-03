@@ -1,1 +1,142 @@
-[{"id":1654237718470,"customer":{"pid":"1","username":"Mubashir","images":"./images/users/muhammadmub.jpg","email":"abc@gmail.com","password":"M123m@123","role":"admin"},"order":[{"pid":"1","title":"USPA T-Shirt","images":["./images/tshirt1.jpg","./images/tshirt2.jpg","./images/tshirt3.jpg","./images/tshirt4.jpg"],"colors":["red","blue","green"],"description":"USPA Self Design Men Round Neck Multi-Color T-Shirt. Handcrafted with Cotton. Perfect for Summers. Material Composition Is 93% Cotton, 7% Elastane.","content":"Designed with overhead movements in mind, this t-shirt offers a full range of motion. It's made of sweat-wicking fabric with a soft, cotton-like feel. Forward-shifted seams reduce chafing in high-sweat areas while a slight droptail hem adds coverage in back.","price":499,"count":1},{"pid":"2","title":"GAS Trouser","images":["./images/pant1.jpg","./images/pant2.jpg","./images/pant3.jpg","./images/pant4.jpg"],"colors":["red","blue","green"],"description":"GAS Casual Men's Regular Fit Mid-Rise trouser made with 100% Cotton. Perfect for Summers. Available in four different colors and five different sizes.","content":"GAS brings to you this stylish casual trouser with a regular fit. They are meticulously stitched out of cotton mix material and feel smooth against your skin. The mid-rise waist provides a modern look and the belt loops allow a tighter fit when a belt is slipped through the loops.","price":1299,"count":1},{"pid":"3","title":"HRX Sneaker","images":["./images/shoes1.jpg","./images/shoes2.jpg","./images/shoes3.jpg","./images/shoes4.jpg"],"colors":["red","blue","green"],"description":"HRX cruz Men's Sneaker Shoe for Casual Outings. The studded rubber outsole and the fine canvas upper sleek offers comfortable forays.","content":"HRX crux Sneakers is designed for versatile styling. The studded rubber outsole and the fine canvas upper sleek offers comfortable forays. The bold contrast HRX Formstrip and the HRX logo adds to the highlights of these sneakers.","price":2599,"count":1},{"pid":"4","title":"Fossil Wrist Watch","images":["./images/watch1.jpg","./images/watch2.jpg","./images/watch3.jpg","./images/watch4.jpg"],"colors":["red","blue","green"],"description":"Fossil Analog Wrist Watch with a leather strap. Ideal fot swimmers and athletes. Available in Four different colors.","content":"Analog watches with a leather strap never go out of style. This stylish analog watch from Fossil comes with a water resistance of 50 mm. This elegantly designed watch from Fossil brings the best of style and technology.","price":999,"count":1}]},{"id":1654238381623,"customer":{"pid":"1","username":"Mubashir","images":"./images/users/muhammadmub.jpg","email":"abc@gmail.com","password":"M123m@123","role":"admin"},"order":[{"pid":"1","title":"USPA T-Shirt","images":["./images/tshirt1.jpg","./images/tshirt2.jpg","./images/tshirt3.jpg","./images/tshirt4.jpg"],"colors":["red","blue","green"],"description":"USPA Self Design Men Round Neck Multi-Color T-Shirt. Handcrafted with Cotton. Perfect for Summers. Material Composition Is 93% Cotton, 7% Elastane.","content":"Designed with overhead movements in mind, this t-shirt offers a full range of motion. It's made of sweat-wicking fabric with a soft, cotton-like feel. Forward-shifted seams reduce chafing in high-sweat areas while a slight droptail hem adds coverage in back.","price":499,"count":1},{"pid":"2","title":"GAS Trouser","images":["./images/pant1.jpg","./images/pant2.jpg","./images/pant3.jpg","./images/pant4.jpg"],"colors":["red","blue","green"],"description":"GAS Casual Men's Regular Fit Mid-Rise trouser made with 100% Cotton. Perfect for Summers. Available in four different colors and five different sizes.","content":"GAS brings to you this stylish casual trouser with a regular fit. They are meticulously stitched out of cotton mix material and feel smooth against your skin. The mid-rise waist provides a modern look and the belt loops allow a tighter fit when a belt is slipped through the loops.","price":1299,"count":1}]}]
+[
+  {
+    "id": 1654237718470,
+    "customer": {
+      "pid": "1",
+      "username": "Mubashir",
+      "images": "./images/users/muhammadmub.jpg",
+      "email": "abc@gmail.com",
+      "password": "M123m@123",
+      "role": "admin"
+    },
+    "order": [
+      {
+        "pid": "1",
+        "title": "USPA T-Shirt",
+        "images": [
+          "./images/tshirt1.jpg",
+          "./images/tshirt2.jpg",
+          "./images/tshirt3.jpg",
+          "./images/tshirt4.jpg"
+        ],
+        "colors": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "description": "USPA Self Design Men Round Neck Multi-Color T-Shirt. Handcrafted with Cotton. Perfect for Summers. Material Composition Is 93% Cotton, 7% Elastane.",
+        "content": "Designed with overhead movements in mind, this t-shirt offers a full range of motion. It's made of sweat-wicking fabric with a soft, cotton-like feel. Forward-shifted seams reduce chafing in high-sweat areas while a slight droptail hem adds coverage in back.",
+        "price": 499,
+        "count": 1
+      },
+      {
+        "pid": "2",
+        "title": "GAS Trouser",
+        "images": [
+          "./images/pant1.jpg",
+          "./images/pant2.jpg",
+          "./images/pant3.jpg",
+          "./images/pant4.jpg"
+        ],
+        "colors": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "description": "GAS Casual Men's Regular Fit Mid-Rise trouser made with 100% Cotton. Perfect for Summers. Available in four different colors and five different sizes.",
+        "content": "GAS brings to you this stylish casual trouser with a regular fit. They are meticulously stitched out of cotton mix material and feel smooth against your skin. The mid-rise waist provides a modern look and the belt loops allow a tighter fit when a belt is slipped through the loops.",
+        "price": 1299,
+        "count": 1
+      },
+      {
+        "pid": "3",
+        "title": "HRX Sneaker",
+        "images": [
+          "./images/shoes1.jpg",
+          "./images/shoes2.jpg",
+          "./images/shoes3.jpg",
+          "./images/shoes4.jpg"
+        ],
+        "colors": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "description": "HRX cruz Men's Sneaker Shoe for Casual Outings. The studded rubber outsole and the fine canvas upper sleek offers comfortable forays.",
+        "content": "HRX crux Sneakers is designed for versatile styling. The studded rubber outsole and the fine canvas upper sleek offers comfortable forays. The bold contrast HRX Formstrip and the HRX logo adds to the highlights of these sneakers.",
+        "price": 2599,
+        "count": 1
+      },
+      {
+        "pid": "4",
+        "title": "Fossil Wrist Watch",
+        "images": [
+          "./images/watch1.jpg",
+          "./images/watch2.jpg",
+          "./images/watch3.jpg",
+          "./images/watch4.jpg"
+        ],
+        "colors": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "description": "Fossil Analog Wrist Watch with a leather strap. Ideal fot swimmers and athletes. Available in Four different colors.",
+        "content": "Analog watches with a leather strap never go out of style. This stylish analog watch from Fossil comes with a water resistance of 50 mm. This elegantly designed watch from Fossil brings the best of style and technology.",
+        "price": 999,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": 1654238381623,
+    "customer": {
+      "pid": "1",
+      "username": "Mubashir",
+      "images": "./images/users/muhammadmub.jpg",
+      "email": "abc@gmail.com",
+      "password": "M123m@123",
+      "role": "admin"
+    },
+    "order": [
+      {
+        "pid": "1",
+        "title": "USPA T-Shirt",
+        "images": [
+          "./images/tshirt1.jpg",
+          "./images/tshirt2.jpg",
+          "./images/tshirt3.jpg",
+          "./images/tshirt4.jpg"
+        ],
+        "colors": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "description": "USPA Self Design Men Round Neck Multi-Color T-Shirt. Handcrafted with Cotton. Perfect for Summers. Material Composition Is 93% Cotton, 7% Elastane.",
+        "content": "Designed with overhead movements in mind, this t-shirt offers a full range of motion. It's made of sweat-wicking fabric with a soft, cotton-like feel. Forward-shifted seams reduce chafing in high-sweat areas while a slight droptail hem adds coverage in back.",
+        "price": 499,
+        "count": 1
+      },
+      {
+        "pid": "2",
+        "title": "GAS Trouser",
+        "images": [
+          "./images/pant1.jpg",
+          "./images/pant2.jpg",
+          "./images/pant3.jpg",
+          "./images/pant4.jpg"
+        ],
+        "colors": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "description": "GAS Casual Men's Regular Fit Mid-Rise trouser made with 100% Cotton. Perfect for Summers. Available in four different colors and five different sizes.",
+        "content": "GAS brings to you this stylish casual trouser with a regular fit. They are meticulously stitched out of cotton mix material and feel smooth against your skin. The mid-rise waist provides a modern look and the belt loops allow a tighter fit when a belt is slipped through the loops.",
+        "price": 1299,
+        "count": 1
+      }
+    ]
+  }
+]
