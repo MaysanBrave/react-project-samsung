@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8000);
 
 
 app.get('/orders',(req,res)=>{

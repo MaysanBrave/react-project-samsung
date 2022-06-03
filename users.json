@@ -2,17 +2,26 @@
     {
         "pid": "1",
         "username": "Mubashir",
-        "images": "./images/users/muhammadmub.jpg", 
+        "images": "./images/users/user1.jpg", 
         "email": "abc@gmail.com",
-        "password": "M123m@123",
+        "password": "abc123",
         "role":"admin"
     },
     {
         "pid": "2",
         "username": "Shakir",
-        "images": "./images/users/shakir.jpg", 
+        "images": "./images/users/user2.jpg", 
         "email": "shakir@gmail.com",
-        "password": "12345678",
+        "password": "abc123",
+        "role":"user"
+    },
+    {
+        "pid": "3",
+        "username": "Fahad",
+        "images": "./images/users/user3.jpg", 
+        "email": "shakir@gmail.com",
+        "password": "abc123",
         "role":"user"
     }
+
 ]
