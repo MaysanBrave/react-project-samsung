@@ -10,21 +10,21 @@ app.use(cors());
 app.listen(process.env.PORT || 8080);
 
 
-app.get('/orders',(req,res)=>{
+app.get('/orders', (req, res) => {
     fs.readFile('orders.json', (err, data) => {
         if (err) throw err;
         orderList = JSON.parse(data);
         res.send(orderList)
     });
 })
-app.get('/users',(req,res)=>{
+app.get('/users', (req, res) => {
     fs.readFile('users.json', (err, data) => {
         if (err) throw err;
         users = JSON.parse(data);
         res.send(users)
     });
 })
-app.get('/products',(req,res)=>{
+app.get('/products', (req, res) => {
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         products = JSON.parse(data);
@@ -32,15 +32,15 @@ app.get('/products',(req,res)=>{
     });
 })
 
-app.put('/order',(req,res)=>{
+app.put('/order', (req, res) => {
     const reqOrder = req.body;
     fs.readFile('orders.json', (err, data) => {
         if (err) throw err;
         orderList = JSON.parse(data);
         orderList = orderList.filter(order => {
-            if(order.pid==reqOrder.pid){
+            if (order.pid == reqOrder.pid) {
                 return reqOrder
-            }else{
+            } else {
                 return order
             }
         })
@@ -49,56 +49,56 @@ app.put('/order',(req,res)=>{
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
-            }     
+            }
             console.log("JSON file has been saved.");
             res.end()
-        });    
+        });
     });
 })
 
-app.post('/order',(req,res)=>{
+app.post('/order', (req, res) => {
     const order = req.body;
     fs.readFile('orders.json', (err, data) => {
         if (err) throw err;
         orderList = JSON.parse(data);
-        orderList.push(order) ;
+        orderList.push(order);
         orderList = JSON.stringify(orderList)
         fs.writeFile("orders.json", orderList, 'utf8', function (err) {
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
-            }     
+            }
             console.log("JSON file has been saved.");
             res.end()
-        });    
+        });
     });
 })
-app.post('/product',(req,res)=>{
+app.post('/product', (req, res) => {
     const product = req.body;
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         products = JSON.parse(data);
-        products.push(product) ;
+        products.push(product);
         products = JSON.stringify(products)
         fs.writeFile("products.json", products, 'utf8', function (err) {
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
-            }     
+            }
             console.log("JSON file has been saved.");
             res.end()
-        });    
+        });
     });
 })
-app.put('/product',(req,res)=>{
+app.put('/product', (req, res) => {
     const reqProduct = req.body;
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         productList = JSON.parse(data);
         productList = productList.filter(product => {
-            if(product.pid==reqProduct.pid){
+            if (product.pid == reqProduct.pid) {
                 return reqProduct
-            }else{
+            } else {
                 return product
             }
         })
@@ -107,45 +107,45 @@ app.put('/product',(req,res)=>{
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
-            }     
+            }
             console.log("JSON file has been saved.");
             res.end()
-        });    
+        });
     });
 })
 
-app.delete('/order/:id?',(req,res)=>{
+app.delete('/order/:id?', (req, res) => {
     const id = req.params.id;
     fs.readFile('orders.json', (err, data) => {
         if (err) throw err;
         orderList = JSON.parse(data);
-        orderList = orderList.filter(order => order.id!==id)
+        orderList = orderList.filter(order => order.id !== id)
         orderList = JSON.stringify(orderList)
         fs.writeFile("orders.json", orderList, 'utf8', function (err) {
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
-            }     
+            }
             console.log("JSON file has been saved.");
             res.end()
-        });    
+        });
     });
 })
 
-app.delete('/product/:id?',(req,res)=>{
+app.delete('/product/:id?', (req, res) => {
     const id = req.params.id;
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         productList = JSON.parse(data);
-        productList = productList.filter(product => product.pid!==id)
+        productList = productList.filter(product => product.pid !== id)
         productList = JSON.stringify(productList)
         fs.writeFile("orders.json", productList, 'utf8', function (err) {
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
-            }     
+            }
             console.log("JSON file has been saved.");
             res.end()
-        });    
+        });
     });
 })
