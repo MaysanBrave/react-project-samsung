@@ -1,0 +1,18 @@
+[
+    {
+        "pid": "1",
+        "username": "Mubashir",
+        "images": "./images/users/muhammadmub.jpg", 
+        "email": "abc@gmail.com",
+        "password": "M123m@123",
+        "role":"admin"
+    },
+    {
+        "pid": "2",
+        "username": "Shakir",
+        "images": "./images/users/shakir.jpg", 
+        "email": "shakir@gmail.com",
+        "password": "12345678",
+        "role":"user"
+    }
+]
