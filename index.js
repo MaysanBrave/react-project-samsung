@@ -94,18 +94,20 @@ app.post('/product', (req, res) => {
 })
 app.put('/product', (req, res) => {
     const reqProduct = req.body;
+    var finalProduct = null ;
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         productList = JSON.parse(data);
-        productList = productList.filter(product => {
+        finalProduct = productList.map(product => {
             if (product.pid == reqProduct.pid) {
                 return reqProduct
             } else {
                 return product
             }
         })
-        productList = JSON.stringify(productList)
-        fs.writeFile("orders.json", productList, 'utf8', function (err) {
+        productList = JSON.stringify(finalProduct)
+        // console.log(productList)
+        fs.writeFile("products.json", productList, 'utf8', function (err) {
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
@@ -121,7 +123,7 @@ app.delete('/order/:id?', (req, res) => {
     fs.readFile('orders.json', (err, data) => {
         if (err) throw err;
         orderList = JSON.parse(data);
-        orderList = orderList.filter(order => order.id !== id)
+        orderList = orderList.map(order => order.id !== id)
         orderList = JSON.stringify(orderList)
         fs.writeFile("orders.json", orderList, 'utf8', function (err) {
             if (err) {
@@ -139,9 +141,9 @@ app.delete('/product/:id?', (req, res) => {
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         productList = JSON.parse(data);
-        productList = productList.filter(product => product.pid !== id)
+        productList = productList.map(product => product.pid != id) && []
         productList = JSON.stringify(productList)
-        fs.writeFile("orders.json", productList, 'utf8', function (err) {
+        fs.writeFile("products.json", productList, 'utf8', function (err) {
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
