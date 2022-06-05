@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
 const fs = require('fs')
+var bodyParser = require('body-parser')
 const cors = require('cors')
 
 app.use(express.json());
 app.use(cors());
-
+// app.use(bodyParser({limit: '50mb'}));
 
 app.listen(process.env.PORT || 8080);
 
@@ -75,6 +76,7 @@ app.post('/order', (req, res) => {
 })
 app.post('/product', (req, res) => {
     const product = req.body;
+    console.log(req.body)
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         products = JSON.parse(data);

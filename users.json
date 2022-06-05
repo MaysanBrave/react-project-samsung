@@ -2,7 +2,7 @@
     {
         "pid": "1",
         "username": "Mubashir",
-        "images": "./images/users/user1.jpg", 
+        "image": "./images/users/user1.png", 
         "email": "abc@gmail.com",
         "password": "abc123",
         "role":"admin"
@@ -10,7 +10,7 @@
     {
         "pid": "2",
         "username": "Shakir",
-        "images": "./images/users/user2.jpg", 
+        "image": "./images/users/user2.png", 
         "email": "shakir@gmail.com",
         "password": "abc123",
         "role":"user"
@@ -18,7 +18,7 @@
     {
         "pid": "3",
         "username": "Fahad",
-        "images": "./images/users/user3.jpg", 
+        "image": "./images/users/user3.png", 
         "email": "shakir@gmail.com",
         "password": "abc123",
         "role":"user"
