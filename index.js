@@ -123,7 +123,7 @@ app.delete('/order/:id?', (req, res) => {
     fs.readFile('orders.json', (err, data) => {
         if (err) throw err;
         orderList = JSON.parse(data);
-        orderList = orderList.map(order => order.id !== id)
+        orderList = orderList.filter(order => order.id !== id)
         orderList = JSON.stringify(orderList)
         fs.writeFile("orders.json", orderList, 'utf8', function (err) {
             if (err) {
@@ -141,7 +141,7 @@ app.delete('/product/:id?', (req, res) => {
     fs.readFile('products.json', (err, data) => {
         if (err) throw err;
         productList = JSON.parse(data);
-        productList = productList.map(product => product.pid != id) && []
+        productList = productList.filter(product => product.pid != id)
         productList = JSON.stringify(productList)
         fs.writeFile("products.json", productList, 'utf8', function (err) {
             if (err) {
